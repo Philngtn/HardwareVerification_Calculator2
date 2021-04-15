@@ -22,11 +22,11 @@ program automatic testDrive(cal_ifc.TEST ifc);
     
     fork
       gen.run(count);
-      drv.run(count);
+      drv.run();
     join
     
     
-      $stop;
+      //$stop;
   end
   
 

@@ -13,7 +13,7 @@ class Driver;
     this.cal_agt2drv = cal_agt2drv;
   endfunction
   
-  task run(input int count);
+  task run();
     // Init data
     
     Transaction_ports tr_ports_received;
@@ -21,27 +21,19 @@ class Driver;
     $display($time, ": Starting driver");
     
     
-    repeat (count) begin
+     forever begin
       // Get the transaction 
       cal_agt2drv.get(tr_ports_received); 
       
-   
-      
+      // Print the received stacked data 
       tr_ports_received.display();
       
-     
-      
-      // Send data to DUT
+      // Send data to DUT simutaneously
       fork
         send2DUT_port1(tr_ports_received.transactionPorts[0],ifc);
         send2DUT_port2(tr_ports_received.transactionPorts[1],ifc);
         send2DUT_port3(tr_ports_received.transactionPorts[2],ifc);
         send2DUT_port4(tr_ports_received.transactionPorts[3],ifc);
-        
-        //send2DUT_allports(tr_ports_received.transactionPorts[0],tr_ports_received.transactionPorts[1],
-        //                  tr_ports_received.transactionPorts[2],tr_ports_received.transactionPorts[3],
-        //                  ifc);
-        
       join
       
     end
