@@ -13,7 +13,7 @@ class Driver;
     this.cal_agt2drv = cal_agt2drv;
   endfunction
   
-  task run(input int count);
+  task run();
     // Init data
     
     Transaction_ports tr_ports_received;
@@ -21,7 +21,7 @@ class Driver;
     $display($time, ": Starting driver");
     
     
-    repeat (count) begin
+     forever begin
       // Get the transaction 
       cal_agt2drv.get(tr_ports_received); 
       

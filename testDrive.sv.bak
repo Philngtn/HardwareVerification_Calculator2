@@ -10,11 +10,11 @@ program automatic testDrive(cal_ifc.TEST ifc);
   Driver drv;
 
   
-  int count;
+  int Max_Gen_Package = 1;
   
   initial begin
     mbx = new();
-    gen = new(mbx);
+    gen = new(mbx, Max_Gen_Package);
     drv = new(mbx, ifc);
     
     count = 1;
@@ -26,7 +26,7 @@ program automatic testDrive(cal_ifc.TEST ifc);
     join
     
     
-      //$stop;
+    $stop;
   end
   
 

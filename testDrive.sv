@@ -10,23 +10,21 @@ program automatic testDrive(cal_ifc.TEST ifc);
   Driver drv;
 
   
-  int count;
+  int Max_Gen_Package = 1;
   
   initial begin
-    mbx = new();
-    gen = new(mbx);
-    drv = new(mbx, ifc);
+ //   mbx = new();
+  //  gen = new(mbx, Max_Gen_Package);
+  //  drv = new(mbx, ifc);
     
-    count = 1;
-        
-    
-    fork
-      gen.run(count);
-      drv.run();
-    join
+  //  count = 1
+  //fork
+ //     gen.run(count);
+ //     drv.run();
+ //   join
     
     
-    $stop;
+  //  $stop;
   end
   
 

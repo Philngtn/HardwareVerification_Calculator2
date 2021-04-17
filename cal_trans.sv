@@ -18,7 +18,7 @@ class Transaction;
   rand bit [0: COMMAND_WIDTH - 1] 	cmd;
   rand bit [0: DATA_WIDTH - 1 ]    data [2];
   bit      [0: TAG_WIDTH - 1] 	    tagIn;
-  
+  bit      [0: DATA_WIDTH - 1 ]    expectedValue;
   
   // Set command
   bit [0:3] vals [] = '{1,2,5,6};
@@ -58,6 +58,8 @@ class Transaction_seq;
     transactionArray = new[maxTransaction];
     foreach (transactionArray[i]) begin
       transactionArray[i] = new();
+      
+      // Add tag to each transaction
       transactionArray[i].tagIn = i + 1;
     end;
   endfunction
@@ -69,6 +71,8 @@ endclass: Transaction_seq
 class Transaction_ports;
   
   rand Transaction_seq transactionPorts [4];
+  int package_cnt;
+  
   
   function new();
     foreach (transactionPorts[i]) begin
@@ -82,7 +86,7 @@ class Transaction_ports;
         foreach (transactionPorts[i].transactionArray[j]) begin
             transactionPorts[i].transactionArray[j].display();     
         end;
-        $display("**********************************************");
+        $display("--------------------- END SubPACKAGE ------------------------");
      end;
   endfunction: display
   
