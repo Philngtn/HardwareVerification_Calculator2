@@ -2,27 +2,26 @@ import dataModel::*;
 
 class Agent;
   
-  mailbox #(Transaction_ports) gen2agt, agt2drv, agt2scr;
+  mailbox #(Transaction_ports) gen2agt, agt2drv;
   Transaction_ports trPorts;
   
-  function new (input mailbox #(Transaction_ports) gen2agt, agt2drv, agt2scr);
+  function new (input mailbox #(Transaction_ports) gen2agt, agt2drv);
     this.gen2agt = gen2agt;
     this.agt2drv = agt2drv;
-    this.agt2scr = agt2scr;
   endfunction
   
-  task run();
-    
+  task main();
+      
     forever begin
       gen2agt.get(trPorts);
-      agt2scr.put(trPorts);
+      
+      $display("AGENT RECEIVED");
+      trPorts.display();
+    
       agt2drv.put(trPorts);
+ 
     end
     
   endtask
-  
-  task wrap_up();
-  endtask
-
 
 endclass

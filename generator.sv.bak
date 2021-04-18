@@ -14,7 +14,7 @@ class Generator;
   event ended;
   
   // Counts the number of performed packages
-  int package_cnt = 0;
+  int package_cnt = 1;
   
   // Mailbox to transmists to Agent
   mailbox #(Transaction_ports) mbx;
@@ -23,7 +23,6 @@ class Generator;
   function new(input mailbox #(Transaction_ports) mbx, int max_package_cnt);
     this.mbx = mbx;
     this.max_package_cnt = max_package_cnt;
-    TrPorts = new;
   endfunction
   
  //  task run(input int count);
@@ -35,24 +34,28 @@ class Generator;
  //  endtask
   
  task main();
-       $display($time, ": Starting generator for %0d package of transactions", max_trans_cnt);
+       $display($time, ": Starting generator for %0d package of transactions", max_package_cnt);
        
        // Start this generator 
        
        while (!end_of_test())
           begin
-            Transaction_ports my_tr_ports;
+            TrPorts = new();
             
             // Wait & Get a transaction
-            my_tr_ports = get_transaction();
+            // TrPorts = get_transaction();
+            `SV_RAND_CHECK(this.TrPorts.randomize());
+      
+            TrPorts.package_cnt = package_cnt;
             
             // Increase the number of sent packages
             ++package_cnt;
             
             // Sebt the data to the agent
-            mbx.put(my_tr_ports);
+            mbx.put(TrPorts);
           end // While end of test 
        
+    
        // Notify the package is sent
        -> ended;
            
@@ -68,9 +71,10 @@ class Generator;
   // Returns a transaction (associated with tr member)
   virtual function Transaction_ports get_transaction();
     
+    // Mark the sent package for checker
     TrPorts.package_cnt = package_cnt;
     
-    if (! this.TrPorts.randomize())
+    if (!this.TrPorts.randomize())
       begin
         $display("apb_gen::randomize failed");
         $finish;
