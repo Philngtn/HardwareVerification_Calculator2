@@ -12,9 +12,9 @@ n@_opt
 Z2 OL;O;10.1e;51
 Z3 d/nfs/home/p/ph_e/Questa/Labs/Lab1
 T_opt1
-Vz51Z8SMS0=LTCJdHhMLhS2
+V`Q^OH0_]=DScaQ@5g[NPn2
 04 3 4 work top fast 0
-=7-308d99620598-607ba567-b8dc3-7330
+=10-308d99620598-607bb8ae-467ea-1607
 R1
 n@_opt1
 R2
@@ -30,7 +30,7 @@ L0 5
 Z8 OL;L;10.1e;51
 r1
 31
-Z9 !s108 1618715974.470389
+Z9 !s108 1618720933.879485
 Z10 !s107 shifter.v|priority.v|mux_out.v|holdreg.v|alu_output_stage.v|alu_input_stage.v|adder.v|/nfs/home/p/ph_e/Questa/Project2/calc2_top.v|
 Z11 !s90 -reportprogress|300|-work|work|-vopt|/nfs/home/p/ph_e/Questa/Project2/calc2_top.v|
 Z12 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
@@ -54,7 +54,7 @@ r1
 Z15 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !s100 TA>HeZWeoB@HHgF1a8SjV3
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/agent.sv|
-!s108 1618715977.365377
+!s108 1618720934.524338
 !s107 /nfs/home/p/ph_e/Questa/Project2/agent.sv|
 !i10b 1
 !i103 1
@@ -125,22 +125,22 @@ DXx4 work 15 monitor_sv_unit 0 22 hf]Pi`RXZcU1;ZdNQL`gN1
 Vj49zen:nZV3UkA6hF=RLc0
 r1
 31
-IUO=T91XZk3P6>H7=j>d1i3
+Im1o5Q5cKg<^e^kHkEoU;i1
 S1
 R4
-Z17 w1618715666
+Z17 w1618720824
 Z18 Fcal_ifc.sv
 Z19 8/nfs/home/p/ph_e/Questa/Project2/monitor.sv
 Z20 F/nfs/home/p/ph_e/Questa/Project2/monitor.sv
 L0 11
 R8
-Z21 !s108 1618715977.757919
+Z21 !s108 1618720934.999538
 Z22 !s107 cal_ifc.sv|/nfs/home/p/ph_e/Questa/Project2/monitor.sv|
 Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/monitor.sv|
 R15
 !s85 0
 !i10b 1
-!s100 RGRUo_Ta=3c0hLm>VCXX=1
+!s100 9UIoSiA8IOKI9McJhZ?V32
 !s105 monitor_sv_unit
 Xcal_ifc_sv_unit
 R13
@@ -219,7 +219,7 @@ r1
 R15
 !s100 ]]jLooN_Z;0:hE=D17_LA1
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/checker.sv|
-!s108 1618715977.578773
+!s108 1618720934.606364
 !s107 /nfs/home/p/ph_e/Questa/Project2/checker.sv|
 !i10b 1
 !i103 1
@@ -242,29 +242,60 @@ R15
 ndata@model
 R27
 !s100 HZ?M=S^IEcJCza^o0KLNf3
-!s108 1618715976.462180
+!s108 1618720934.268053
 !i10b 1
 !s85 0
 Xdriver_sv_unit
 R13
 R14
-V38]b?=j1UV]Y1_@X<<6JV2
+VS^QESAS8L:Jlc3GUnP>TO0
 r1
 31
-I38]b?=j1UV]Y1_@X<<6JV2
+IS^QESAS8L:Jlc3GUnP>TO0
 S1
 R4
-Z28 w1618715966
+R17
 8/nfs/home/p/ph_e/Questa/Project2/driver.sv
 F/nfs/home/p/ph_e/Questa/Project2/driver.sv
 R18
 L0 1
 R8
 R15
-!s100 RTc@l<3T3BH@fL`Cn8IVW1
-!s108 1618715975.742671
+!s100 5KzP<6AFLC6DXIh_cKS3<0
+!s108 1618720934.177808
 !s107 cal_ifc.sv|/nfs/home/p/ph_e/Questa/Project2/driver.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/driver.sv|
+!s85 0
+!i10b 1
+!i103 1
+Xenvironment_sv_unit
+R13
+R14
+VT4J8a6QK1I200I<lf9z;`0
+r1
+31
+IT4J8a6QK1I200I<lf9z;`0
+S1
+R4
+R17
+8/nfs/home/p/ph_e/Questa/Project2/environment.sv
+F/nfs/home/p/ph_e/Questa/Project2/environment.sv
+Z28 Fdriver.sv
+R18
+Z29 Fgenerator.sv
+Z30 FSV_RAND_CHECK.sv
+Z31 Fagent.sv
+Z32 Fscoreboard.sv
+Z33 Fmonitor.sv
+R18
+Z34 Fchecker.sv
+L1 1
+R8
+R15
+!s100 IY4V]hX:?@SGUPHYTG2;_3
+!s108 1618720934.643987
+!s107 checker.sv|monitor.sv|scoreboard.sv|agent.sv|SV_RAND_CHECK.sv|generator.sv|cal_ifc.sv|driver.sv|/nfs/home/p/ph_e/Questa/Project2/environment.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/environment.sv|
 !s85 0
 !i10b 1
 !i103 1
@@ -278,7 +309,7 @@ R4
 w1618714105
 8/nfs/home/p/ph_e/Questa/Project2/generator.sv
 F/nfs/home/p/ph_e/Questa/Project2/generator.sv
-Z29 FSV_RAND_CHECK.sv
+R30
 L0 1
 R8
 r1
@@ -286,7 +317,7 @@ r1
 R15
 !s100 B_4D7nXXBO:2hO[n3n?3T0
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/generator.sv|
-!s108 1618715977.138659
+!s108 1618720934.437128
 !s107 SV_RAND_CHECK.sv|/nfs/home/p/ph_e/Questa/Project2/generator.sv|
 !i10b 1
 !i103 1
@@ -304,7 +335,7 @@ r1
 31
 R12
 !s100 Eb4JJ2ST=8mfMc_dM66Gb1
-!s108 1618715975.063123
+!s108 1618720934.024464
 !s107 /nfs/home/p/ph_e/Questa/Project2/holdreg.v|
 !s90 -reportprogress|300|-work|work|-vopt|/nfs/home/p/ph_e/Questa/Project2/holdreg.v|
 !i10b 1
@@ -345,7 +376,7 @@ r1
 31
 R12
 !s100 SFY<@T7mX3R05EA>3<CIk1
-!s108 1618715975.173556
+!s108 1618720934.054708
 !s107 /nfs/home/p/ph_e/Questa/Project2/mux_out.v|
 !s90 -reportprogress|300|-work|work|-vopt|/nfs/home/p/ph_e/Questa/Project2/mux_out.v|
 !i10b 1
@@ -363,7 +394,7 @@ r1
 31
 R12
 !s100 CE>e3A[2:A2^VkD>f`[362
-!s108 1618715975.257240
+!s108 1618720934.085163
 !s107 /nfs/home/p/ph_e/Questa/Project2/priority.v|
 !s90 -reportprogress|300|-work|work|-vopt|/nfs/home/p/ph_e/Questa/Project2/priority.v|
 !i10b 1
@@ -385,7 +416,7 @@ r1
 R15
 !s100 QZo]3dVPQd<XUN<XA2J<E0
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/scoreboard.sv|
-!s108 1618715977.470510
+!s108 1618720934.568521
 !s107 /nfs/home/p/ph_e/Questa/Project2/scoreboard.sv|
 !i10b 1
 !i103 1
@@ -403,7 +434,7 @@ r1
 31
 R12
 !s100 2bX0Azg?Sm:4h[N;BFlPR1
-!s108 1618715975.416886
+!s108 1618720934.122687
 !s107 /nfs/home/p/ph_e/Questa/Project2/shifter.v|
 !s90 -reportprogress|300|-work|work|-vopt|/nfs/home/p/ph_e/Questa/Project2/shifter.v|
 !i10b 1
@@ -418,14 +449,14 @@ r1
 IC5dz2XF_72YQ^YoN6YT6E0
 S1
 R4
-Z30 w1618284675
-Z31 8/nfs/home/p/ph_e/Questa/Project2/test.sv
-Z32 F/nfs/home/p/ph_e/Questa/Project2/test.sv
+Z35 w1618284675
+Z36 8/nfs/home/p/ph_e/Questa/Project2/test.sv
+Z37 F/nfs/home/p/ph_e/Questa/Project2/test.sv
 L0 4
 R8
-Z33 !s108 1618715976.683477
-Z34 !s107 SV_RAND_CHECK.sv|/nfs/home/p/ph_e/Questa/Project2/test.sv|
-Z35 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/test.sv|
+Z38 !s108 1618720934.300551
+Z39 !s107 SV_RAND_CHECK.sv|/nfs/home/p/ph_e/Questa/Project2/test.sv|
+Z40 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/test.sv|
 R15
 !s100 i[`FobnFnQ1=SbkOV65bX3
 !s105 test_sv_unit
@@ -440,15 +471,15 @@ r1
 I076R68Be5K>cL90ciYb_j0
 S1
 R4
+R35
+R36
+R37
 R30
-R31
-R32
-R29
 L0 1
 R8
-R33
-R34
-R35
+R38
+R39
+R40
 R15
 !s100 VP8B:f^O0=0P4ZYnTeeDe2
 !s85 0
@@ -457,56 +488,56 @@ R15
 4testDrive
 R13
 R14
-DXx4 work 17 testDrive_sv_unit 0 22 Klgocc0Ao8ELZP3OAg=192
+DXx4 work 17 testDrive_sv_unit 0 22 B73;_K3[nRmgK28WjJ42H2
 V?T1;6z^GVe=zRF6^nV?5`0
 r1
 31
-I9QUk4QKlJ<jL>L[^8;zYK3
+IYUbEk7CTS8QfjJ?Z`9VC60
 S1
 R4
-w1618715577
-Z36 8/nfs/home/p/ph_e/Questa/Project2/testDrive.sv
-Z37 F/nfs/home/p/ph_e/Questa/Project2/testDrive.sv
+Z41 w1618720932
+Z42 8/nfs/home/p/ph_e/Questa/Project2/testDrive.sv
+Z43 F/nfs/home/p/ph_e/Questa/Project2/testDrive.sv
 L0 11
 R8
-Z38 !s108 1618715976.878619
-Z39 !s107 checker.sv|monitor.sv|scoreboard.sv|agent.sv|SV_RAND_CHECK.sv|generator.sv|cal_ifc.sv|driver.sv|/nfs/home/p/ph_e/Questa/Project2/testDrive.sv|
-Z40 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/testDrive.sv|
+Z44 !s108 1618720934.368223
+Z45 !s107 checker.sv|monitor.sv|scoreboard.sv|agent.sv|SV_RAND_CHECK.sv|generator.sv|cal_ifc.sv|driver.sv|/nfs/home/p/ph_e/Questa/Project2/testDrive.sv|
+Z46 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/testDrive.sv|
 R15
 ntest@drive
-!s100 KPTzIh;>;n`nSefKdYN?=0
 !s105 testDrive_sv_unit
+!s100 llWjU[ooTTKc`OA;IbhCz2
 !s85 0
 !i10b 1
 XtestDrive_sv_unit
 R13
 R14
-VKlgocc0Ao8ELZP3OAg=192
+VB73;_K3[nRmgK28WjJ42H2
 r1
 31
-IKlgocc0Ao8ELZP3OAg=192
+IB73;_K3[nRmgK28WjJ42H2
 S1
 R4
+R41
+R42
+R43
 R28
-R36
-R37
-Fdriver.sv
 R18
-Fgenerator.sv
 R29
-Fagent.sv
-Fscoreboard.sv
-Fmonitor.sv
+R30
+R31
+R32
+R33
 R18
-Fchecker.sv
+R34
 L1 1
 R8
-R38
-R39
-R40
+R44
+R45
+R46
 R15
 ntest@drive_sv_unit
-!s100 FNFd7gR[BEQc7<^hHOa8P3
+!s100 :GTU?0>5e@lzca[YnRcfk3
 !s85 0
 !i10b 1
 !i103 1
@@ -527,7 +558,7 @@ R15
 !s100 ?U30fNMFXRTO5>oTedLXR2
 !s105 top_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|/nfs/home/p/ph_e/Questa/Project2/top.sv|
-!s108 1618715977.241912
+!s108 1618720934.486043
 !s107 /nfs/home/p/ph_e/Questa/Project2/top.sv|
 !i10b 1
 !s85 0

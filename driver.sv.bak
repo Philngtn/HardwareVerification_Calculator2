@@ -22,13 +22,12 @@ class Driver;
     Transaction_ports tr_ports_received;
     
     // Reset at the beginning 
-    reset(ifc);
+  
+    $display("STARTING DRIVER");
     
     
-     $display("STARTING DRIVER");
-    
-    
-     forever begin
+    forever 
+     begin
        
       // Get the transaction from the agent
       cal_agt2drv.get(tr_ports_received); 
@@ -43,8 +42,8 @@ class Driver;
         send2DUT_port3(tr_ports_received.transactionPorts[2],ifc);
         send2DUT_port4(tr_ports_received.transactionPorts[3],ifc);
       join
-      
-    end
+       
+     end
    
 
   endtask: main

@@ -1,11 +1,4 @@
-/nfs/home/p/ph_e/Questa/Project2/cal_ifc.sv {1 {vlog -work work -vopt -sv /nfs/home/p/ph_e/Questa/Project2/cal_ifc.sv
-QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
--- Compiling interface cal_ifc
-
-Top level modules:
-	--none--
-
-} {} {}} /nfs/home/p/ph_e/Questa/Project2/SV_RAND_CHECK.sv {1 {vlog -work work -vopt -sv /nfs/home/p/ph_e/Questa/Project2/SV_RAND_CHECK.sv
+/nfs/home/p/ph_e/Questa/Project2/SV_RAND_CHECK.sv {1 {vlog -work work -vopt -sv /nfs/home/p/ph_e/Questa/Project2/SV_RAND_CHECK.sv
 QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
 
 } {} {}} /nfs/home/p/ph_e/Questa/Project2/alu_output_stage.v {1 {vlog -work work -vopt /nfs/home/p/ph_e/Questa/Project2/alu_output_stage.v
@@ -137,15 +130,24 @@ QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
 Top level modules:
 	calc2_top
 
+} {} {}} /nfs/home/p/ph_e/Questa/Project2/environment.sv {1 {vlog -work work -vopt -sv /nfs/home/p/ph_e/Questa/Project2/environment.sv
+QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
+-- Compiling interface cal_ifc
+-- Compiling interface cal_ifc
+-- Compiling package environment_sv_unit
+-- Importing package dataModel
+-- Compiling interface cal_ifc
+-- Compiling interface cal_ifc
+
+Top level modules:
+	--none--
+
 } {} {}} /nfs/home/p/ph_e/Questa/Project2/adder.v {1 {vlog -work work -vopt /nfs/home/p/ph_e/Questa/Project2/adder.v
 QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
 -- Compiling module adder
 
 Top level modules:
 	adder
-
-} {} {}} /nfs/home/p/ph_e/Questa/Project2/environment.sv {1 {vlog -work work -vopt -sv /nfs/home/p/ph_e/Questa/Project2/environment.sv
-QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013
 
 } {} {}} /nfs/home/p/ph_e/Questa/Project2/mux_out.v {1 {vlog -work work -vopt /nfs/home/p/ph_e/Questa/Project2/mux_out.v
 QuestaSim-64 vlog 10.1e Compiler 2013.06 Jun 11 2013

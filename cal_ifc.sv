@@ -26,7 +26,8 @@ interface cal_ifc(input bit clk);
     // default input #1skew output #0;
     input out_data1, out_data2, out_data3, out_data4;
     input out_resp1, out_resp2, out_resp3, out_resp4, out_tag1, out_tag2, out_tag3, out_tag4;
-
+    
+    output reset;
     output req1_cmd_in, req2_cmd_in, req3_cmd_in, req4_cmd_in;
     output req1_tag_in, req2_tag_in, req3_tag_in, req4_tag_in;
     output req1_data_in, req2_data_in, req3_data_in, req4_data_in; 
@@ -40,7 +41,7 @@ interface cal_ifc(input bit clk);
   endclocking
  
   // Interface for Test
-  modport TEST (clocking cb, output reset);
+  modport TEST (clocking cb);
   
   // Interface for DUT 
   modport DUT (input req1_cmd_in, req2_cmd_in, req3_cmd_in, req4_cmd_in,

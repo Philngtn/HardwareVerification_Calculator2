@@ -34,24 +34,23 @@ program automatic testDrive(cal_ifc.TEST ifc);
     scr = new(agt2drv, scr2ckc);
     ckc = new(Max_Gen_Package, scr2ckc, mon2ckc);
   
-    fork
-        gen.main();
-        agt.main();
-        
-        begin
-          drv.main();
-          scr.main();
-        end
-        
-        mon.main();
-        ckc.main();
-        
+  
+  
+    fork 
+      gen.main();
+      agt.main();
+      
+      drv.main();
+      mon.main();
+    
+      ckc.main();
+      scr.main();
     join
     
     
-  //  $stop;
+    
+    $stop;
   end
-  
 
   
   
