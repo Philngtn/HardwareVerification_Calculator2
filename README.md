@@ -1,10 +1,10 @@
 # Hardware Verification with Randomization.
 
-## Objective: Build a verification environment as shown in the figure below. The environment should be class-based with randomization and functional coverage
+### Objective: Build a verification environment as shown in the figure below. The environment should be class-based with randomization and functional coverage
 
 ![Verification](https://user-images.githubusercontent.com/60360984/121116633-d7af6880-c7e4-11eb-9444-ce4b0d225a67.png)
 
-## Design Inputs/Outputs of the Calculator:
+### Design Inputs/Outputs of the Calculator:
 c_clk: c_clk is the main clock.
 
 reset: Needs to be held high for three cycles at the start of the testcase. Must remain low during
@@ -25,7 +25,7 @@ out_tagX(0:1): Corresponds to the command tag sent by the requester. Used to ide
 
 ![image](https://user-images.githubusercontent.com/60360984/121116900-442a6780-c7e5-11eb-9624-72ce687cfef7.png)
 
-## Result:
+### Result:
 
 Command testing cases:
 ![image](https://user-images.githubusercontent.com/60360984/121117016-776cf680-c7e5-11eb-8ce2-5b47bbb8a8da.png)
